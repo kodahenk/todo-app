@@ -1,5 +1,7 @@
 # Todo App
 
+[![Kullanım Videos]](./docs/usage.mp4)
+
 ## Docker İçin Hazırlıklar
 
 ```bash
