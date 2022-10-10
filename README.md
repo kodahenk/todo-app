@@ -1,6 +1,6 @@
 # Todo App
 
-[![Kullanım Videos]](./docs/usage.mp4)
+[![Kullanım Videos]](https://raw.githubusercontent.com/kodahenk/todo-app/master/docs/usage.mp4)
 
 ## Docker İçin Hazırlıklar
 
