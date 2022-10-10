@@ -20,6 +20,7 @@ class TaskFactory extends Factory
             'title' => fake()->text(15),
             'content' => fake()->sentence(6),
             'status' => fake()->boolean(),
+            'user_id' => 1,
         ];
     }
 }

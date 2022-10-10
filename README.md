@@ -1,6 +1,6 @@
 # Todo App
 
-[![Kullanım Videos]](https://raw.githubusercontent.com/kodahenk/todo-app/master/docs/usage.mp4)
+Kullanıcıların register/login olduğu ve kendi todo listlerini gördüğü uygulama
 
 ## Docker İçin Hazırlıklar
 

@@ -6,6 +6,7 @@ use App\Http\Requests\StoreTaskRequest;
 use App\Http\Requests\UpdateTaskRequest;
 use App\Models\Task;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class TaskController extends Controller
 {
@@ -22,7 +23,7 @@ class TaskController extends Controller
      */
     public function index()
     {
-        $tasks = Task::paginate(10);
+        $tasks = Task::query()->where('user_id', Auth::id())->paginate(10);
         return view('backend.task.index', compact('tasks'));
     }
 
@@ -45,6 +46,7 @@ class TaskController extends Controller
     public function store(StoreTaskRequest $request)
     {
         $task = new Task;
+        $task->user_id = Auth::id();
         $task->title = $request->title;
         $task->content = $request->content;
         $task->status = false;

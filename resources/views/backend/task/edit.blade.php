@@ -35,7 +35,7 @@
                                     </div>
                                     <div class="mb-4">
                                         <label class="form-label" for="block-form5-username">Content</label>
-                                        <input type="text" class="form-control form-control-alt" name="content" {{ $task->content }}>
+                                        <input type="text" class="form-control form-control-alt" name="content"  value="{{ $task->content }}">
                                     </div>
                                     <div class="mb-4">
                                         <div class="form-check">
