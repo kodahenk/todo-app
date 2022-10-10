@@ -1,6 +1,8 @@
 # Todo App
 
-Kullanıcıların register/login olduğu ve kendi todo listlerini gördüğü uygulama
+Kullanıcıların register/login olduğu ve kendi todo listlerini gördüğü uygulama.
+
+Kullanımıyla ilgili video https://youtu.be/gUybUxdRnlk
 
 ## Docker İçin Hazırlıklar
 
