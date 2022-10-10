@@ -13,6 +13,7 @@ docker run --name padmin -p 8080:80 --link mysql-server:db phpmyadmin/phpmyadmin
 ## Proje İçin Hazırlıklar
 
 phpmyadmin user: root
+
 phpmyadmin pass: test123
 
 http://localhost:8080/ PHPMyAdmin ile **todo_app** adında veritanı oluşturun.
@@ -24,6 +25,7 @@ php artisan migrate
 ```
 
 ### Tablolara Örnek Veri Eklemek İçin
+
 15 Tane Demo task ekler
 
 ```bash
