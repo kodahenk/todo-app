@@ -74,6 +74,7 @@
 
         <main class="py-4">
             @yield('content')
+            <a href="{{url()->previous()}}" class="btn btn-info">Backgeri</a>
         </main>
     </div>
 </body>

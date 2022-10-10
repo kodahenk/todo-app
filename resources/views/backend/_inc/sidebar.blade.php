@@ -11,7 +11,7 @@
                 <a class="link-fx fw-bold tracking-wide mx-auto" href="{{route('tasks.index')}}">
                     <span class="smini-hidden">
                         <i class="fa fa-fire text-primary"></i>
-                        <span class="fs-4 text-dual">code</span><span class="fs-4 text-primary">base</span>
+                        <span class="fs-4 text-dual">Todo</span><span class="fs-4 text-primary">App</span>
                     </span>
                 </a>
             </div>
@@ -50,7 +50,9 @@
                     </a>
                     <ul class="list-inline mt-3 mb-0">
                         <li class="list-inline-item">
-                            <a class="link-fx text-dual fs-sm fw-semibold" href="be_pages_generic_profile.html"></a>
+                            <a class="link-fx text-dual fs-sm fw-semibold" href="#">
+                                {{auth()->user()->name}}
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -69,32 +71,19 @@
                     </li>
                     <li class="nav-main-item">
                         <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon fa fa-users"></i>
-                            <span class="nav-main-link-name">Users</span>
+                            <i class="nav-main-link-icon fa fa-circle-check"></i>
+                            <span class="nav-main-link-name">Finished Task</span>
                         </a>
-                    </li>
-                    <li class="nav-main-item">
-                        <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true"
-                            aria-expanded="false" href="#">
-                            <i class="nav-main-link-icon fa fa-coffee"></i>
-                            <span class="nav-main-link-name">Get Started</span>
-                        </a>
-                        <ul class="nav-main-submenu">
-                            <li class="nav-main-item">
-                                <a class="nav-main-link" href="gs_backend.html">
-                                    <span class="nav-main-link-name">Backend</span>
-                                </a>
-                            </li>
-                            <li class="nav-main-item">
-                                <a class="nav-main-link" href="gs_backend_boxed.html">
-                                    <span class="nav-main-link-name">Backend Boxed</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="nav-main-item">
                         <a class="nav-main-link" href="">
-                            <i class="nav-main-link-icon fa fa-house-user"></i>
+                            <i class="nav-main-link-icon fa fa-circle-exclamation"></i>
+                            <span class="nav-main-link-name">Unfinished Task</span>
+                        </a>
+                    </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link" href="">
+                            <i class="nav-main-link-icon fa fa-wrench"></i>
                             <span class="nav-main-link-name">Settings</span>
                         </a>
                     </li>

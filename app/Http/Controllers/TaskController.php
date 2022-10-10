@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -91,9 +97,9 @@ class TaskController extends Controller
         $task->title = $request->title;
         $task->content = $request->content;
 
-        if ($request->status) 
+        if ($request->status)
             $task->status = true;
-        else 
+        else
             $task->status = false;
 
         $task->save();

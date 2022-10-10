@@ -19,18 +19,20 @@
 
             <!-- User Dropdown -->
             <div class="d-inline">
-                <a class="btn btn-sm btn-alt-danger" href="{{ route('logout') }}"
-                   onclick="event.preventDefault();
-                                 document.getElementById('logout-form').submit();">
-                    {{ __('Logout') }}
-                </a>
+                @if (Auth::check())
+                    <a class="btn btn-sm btn-alt-danger" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                              document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
+                    </a>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                </form>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @endif
             </div>
             <!-- END User Dropdown -->
-            
+
             <!-- Notifications -->
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn btn-sm btn-alt-secondary" id="page-header-notifications"

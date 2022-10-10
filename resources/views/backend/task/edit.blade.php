@@ -5,6 +5,10 @@
 
         <!-- Page Content -->
         <div class="content">
+            <a href="{{ url()->previous() }}" class="btn btn-info mb-3">
+                <i class="nav-main-link-icon fa fa-arrow-left"> </i>  Back
+            </a>
+            
             <div class="block block-rounded">
                 <div class="block-header block-header-default">
                     <h3 class="block-title">Task Edit</h3>
